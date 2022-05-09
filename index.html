@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>This is my first website</title>
-	</head>
-	<body>
-		<h1>Hey this is my first website</h1>
-		<h2>This is my first website</h2>
-	</body>
+<head>
+<title>My first page</title>
+<link rel="icon" type="image/x-icon" href="../small.png">
+<link rel="stylesheet" href="C:\Users\rajat.purohit\Documents\HTML\css\test.css">
+
+</head>
+<body>
+<h2 id="c4">down</h2>
+<div class="header">
+<h1>Hellow world</h1>
+<p> Hi i am a computer technician</p>
+</div>
+<div class="menu">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#news">News</a></li>
+<li><a href="#cotact">Contact</a></li>
+</ul>
+</div>
+<div>
+<img  class="image" src="C:\Users\rajat.purohit\Documents\HTML\cve.jpg" alt="CVE report" >
+</div>
+
+<img src="C:\Users\rajat.purohit\Documents\HTML\workplace.jpg" alt="photo" usemap="#workmap">
+<map name="workmap">
+<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm" onclick="myfunction()">
+</map>
+
+<table>
+<caption>Monthly savings</caption>
+<tr>
+<th colspan="2">Person 1</th>
+<th>Person 2</th>
+
+</tr>
+<tr>
+<td>Emil</td>
+<td>Tobias</td>
+<td>Linus</td>
+</tr>
+<tr>
+<td>16</td>
+<td>14</td>
+<td>10</td>
+</tr>
+</table>
+<button onclick="myfunction()">Hide elemens</button>
+<h2 class="city">London</h2>
+<script>
+function myfunction(){
+var x=document.getElementsByClassName("city");
+for(var i=0;i<x.length;i++)
+{
+x[i].style.display="none";
+}
+}
+</script>
+
+<iframe src="demo_ifram.html" name="iframe_a" height="200" width="300" title="Iframe Example">
+</iframe>
+<p><a href="https://www.w3schools.com" target="iframe_a">w3schools.com</a></p>
+
+</body>
 </html>
